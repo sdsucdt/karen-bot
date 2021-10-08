@@ -4,16 +4,24 @@ A helpful Discord/Slack bot for CDT-managed servers.
 
 ## Installation
 
-Make sure you have a valid [Go](https://golang.org/) installation and then inside the project directory, run:
-
 ```bash
-go build
+poetry install
+poetry run main.py
 ```
 
-Then, run the binary with the `-d` and `-s` flag:
+## Configuration
 
-```bash
-./karen -d DISCORD_BOT_TOKEN -s SLACK_BOT_TOKEN
+Create a file named `config.toml` in the same directory and follow the template:
+
+```toml
+# Discord Token
+token = ""
+# Channel ID for anonymous questions
+question_id = ""
+# Role ID for Officers
+officer_role_id = ""
+# Command prefix
+prefix = "!"
 ```
 
 ## License
