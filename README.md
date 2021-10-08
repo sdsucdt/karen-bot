@@ -5,8 +5,10 @@ A helpful Discord/Slack bot for CDT-managed servers.
 ## Installation
 
 ```bash
+# Python >=3.9, <3.11
 poetry install
-poetry run main.py
+poetry shell
+python main.py
 ```
 
 ## Configuration
